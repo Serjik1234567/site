@@ -599,8 +599,34 @@ justify-content: space-between;
 a {
 	color:#8ad847;
 }
-@media and (max-width:800px) {
+@media (max-width:800px) {
     main .content {
 	width: 100%;
 }
    }
+
+   html{
+	scroll-behavior: smooth;
+  }
+  
+  .akeconsa-udaneles{
+	position: fixed;
+	bottom: 28px;
+	right: 28px;
+	z-index: 9;
+  }
+  .akeconsa-udaneles a {
+	height: 42px;
+	width: 42px;
+	text-align: center;
+	background: #151414 url(../img/111095-glowing-green-neon-icon-business-cursor.png) top -5px left 8px;
+	background-size:cover;
+	display: block;
+	border-radius: 2px;
+  }
+  .akeconsa-udaneles a span {
+	color: #f7f0f0;
+	font-size: 30px;
+	line-height: 42px;
+	cursor: pointer;
+  }
