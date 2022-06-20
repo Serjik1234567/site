@@ -267,6 +267,117 @@ nav {
 	display: table-cell;
     vertical-align: middle;
 }
+/*PERVII BLOK V MAIN*/
+#all {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+	margin-bottom:10px;
+	
+}
+.view {
+	margin: 10px;
+	float: left;
+	border: 10px solid #fff;
+	overflow:hidden;
+	position: relative;
+	text-align:center;
+	box-shadow: 1px 1px 2px #e6e6e6;
+	background: white;
+	
+}
+.view img {
+	width: 320px;
+	height: 200px;
+	display:block;
+	position:relative;
+	
+}
+.view .mask {
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top:0;
+	left:0;
+	overflow:hidden;	
+}
+.view h2{
+	text-transform: uppercase;
+	color: white;
+	text-align:center;
+	position: relative;
+	font-size: 17px;
+	padding: 10px;
+	margin-top: 20px;
+}
+.view p{
+	font-style: italic;
+	font-size:14px;
+	position:relative;
+	color:white;
+	text-align:center;
+	padding:0 20px;
+}
+.info2 {
+	display: inline-block;
+	text-decoration:none;
+	padding: 7px 14px;
+	background: black;
+	color: white;
+	text-transform: uppercase;
+	box-shadow: 0 0 1px #000;
+}
+.info2:hover {
+	box-shadow: 0 0 5px #000;
+}
+.view-tenth img {
+	transform: scaleY(1);
+	transition: all .7s ease-in-out;
+}
+.view-tenth .mask {
+	background:rgba(255, 231, 179, .3);
+	transition: all .5s linear;
+	opacity:0;
+	
+}
+.view-tenth h2 {
+	border-bottom: 1px solid rgba(0,0,0,.3);
+	background: transparent;
+	margin: 20px 40px 0 40px;
+	transform: scale(0);
+	color: #333;
+	opacity:0;
+	transition: all .5s linear;
+}
+.view-tenth p{
+	transform: scale(0);
+	color: #333;
+	opacity:0;
+	transition: all .5s linear;
+}
+.view-tenth .info2{
+	transform: scale(0);
+	opacity:0;
+	transition: all .5s linear;
+}
+.view-tenth:hover img{
+	transform:scale(10);
+	opacity:0;
+	
+}
+.view-tenth:hover .mask {
+	opacity:1;
+	width:100%;
+	
+}
+.view-tenth:hover h2, .view-tenth:hover p,.view-tenth:hover .info2 {
+	opacity:1;
+	transform:scale(1);
+}
 
 /*NADPIS NAD FUTEROM*/
 .my-flex-box {
@@ -489,14 +600,8 @@ text-decoration: none;
 
 /*Osnovnoe soderzimoe*/
 .conteiner {
-
 	margin-left:auto;
 	margin-right: auto;
-}
-#header {
-	display:block;
-	height:120px;
-	background: url(img/leaf.jpg) no-repeat top 50%  right ;
 }
 h1 {
 	font-size: 30px;
@@ -506,17 +611,15 @@ h1 {
 	padding-left:20px;
 	color:#8ad847;
 }
-#header p {
-	padding-left:75px;
-	padding-top:10px;
-}
-
 main {
 	width: 90%;
-	margin: 10px auto;
+	margin: 0 auto;
 	background: rgb(249 249 249 / 95%);
 	display:flex;
 	flex-wrap: wrap
+}
+main p {
+	font-size:20px;
 }
 main .content {
 	width: calc(100% - 260px);
@@ -529,9 +632,10 @@ main .content {
 	width: 220px;
 	margin: 10px auto;
 }
+
 h2 {
 	background: #dddddd;
-	padding-left: 30px;
+	text-align:center;
 	margin-top:20px;
 	margin-bottom:10px;
 	color:#3c4272;
@@ -545,12 +649,12 @@ h2 {
 	padding: 5px;
 
 }
+
 .news h2 {
 margin-top:0;
 padding-left: 20px;
 }
 .news p {
-
 padding-bottom: 20px;
 }	
 .links {
@@ -598,3 +702,4 @@ padding-left: 20px;
 	line-height: 42px;
 	cursor: pointer;
   }
+  
