@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 <link rel="stylesheet" href="css/style.css" type="text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <title>Мой сайт</title>
 <base target="_blank">
 </head>
@@ -19,10 +20,10 @@
 <nav>
 <div class="nav">
 <ul class="menu">
-<li><a href="index.html" class="slideskew">ГЛАВНАЯ</a></li>
-<li><a href="contakti.html" class="slideskew">КОНТАКТЫ</a></li>
-<li><a href="aboutme.html" class="slideskew">ОБО МНЕ</a></li>
-<li><a href="portfolio.html" class="slideskew">ПОРТФОЛИО</a></li>
+<li><a href="index.html" class="slideskew" target="_self">ГЛАВНАЯ</a></li>
+<li><a href="contakti.html" class="slideskew" target="_self">КОНТАКТЫ</a></li>
+<li><a href="aboutme.html" class="slideskew"target="_self">ОБО МНЕ</a></li>
+<li><a href="portfolio.html" class="slideskew"target="_self">ПОРТФОЛИО</a></li>
 
 </ul>
 <div class="search"><input type="text/search"></div>
@@ -30,7 +31,7 @@
 </nav>
 <main>
 <article class="content">
-<div class="corel">
+<div class="corel" id="corel" name="corel">
 <h2>Работы выполненные в CorelDRAW Graphics Suite</h2>
 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -94,13 +95,13 @@
                     </div>
                 </div>
 </div>
-<div class="photoshop">
+<div class="photoshop" id="photoshop" name="photoshop">
 <h2>Работы выполненные в Adobe Photoshop</h2>
 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div id="porfoliowarp" class="grid-gutter-md grid-col-3">
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/vedro.jpg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/vedro.jpg) no-repeat center;  background-position: center;
@@ -109,7 +110,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/photo1643566543.jpeg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/photo1643566543.jpeg) no-repeat center;  background-position: center;
@@ -118,7 +119,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightboxvideo" data-glightbox="type: video" href="img/photo1648537209.jpeg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/photo1648537209.jpeg) no-repeat center;  background-position: center;
@@ -127,7 +128,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/photo1656400009.jpeg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/photo1656400009.jpeg) no-repeat center;  background-position: center;
@@ -136,7 +137,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/photo1656400029.jpeg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/photo1656400029.jpeg) no-repeat center;  background-position: center;
@@ -145,7 +146,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink  glightbox" data-glightbox="type: image" href="img/photo.jpg">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/photo.jpg) no-repeat center;  background-position: center;
@@ -157,13 +158,13 @@
                     </div>
                 </div>
 </div>
-<div class="animate">
+<div class="animate" id="animate" name="animate">
 <h2>Работы выполненные в Adobe Animate и не только</h2>
 <div class="row">
                     <div class="col-lg-12 text-center">
                         <div id="porfoliowarp" class="grid-gutter-md grid-col-3">
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/mario.gif">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/mario.gif) no-repeat center;  background-position: center;
@@ -172,7 +173,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/truck.gif">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/truck.gif) no-repeat center;  background-position: center;
@@ -181,7 +182,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightboxvideo" data-glightbox="type: video" href="https://youtu.be/laz665oJThs">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/swislach.jpg) no-repeat center;  background-position: center;
@@ -190,7 +191,7 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
+                            <div class="porfoliowarp__item animate__swing">
                                 <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/domik.gif">
                                     <i class="fa-solid fa-circle-plus"></i>
                                     <div class="porfoliowarp__content" style="background: url(img/domik.gif) no-repeat center;  background-position: center;
@@ -199,19 +200,19 @@
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;web&quot;]">
-                                <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="./asset/portfolio/5.jpg">
+                            <div class="porfoliowarp__item animate__swing">
+                                <a class="porfoliowarp__portolink glightbox" data-glightbox="type: image" href="img/mjach.gif">
                                     <i class="fa-solid fa-circle-plus"></i>
-                                    <div class="porfoliowarp__content" style="background: url(./asset/portfolio/5.jpg) no-repeat center;  background-position: center;
+                                    <div class="porfoliowarp__content" style="background: url(img/mjach.gif) no-repeat center;  background-position: center;
                         background-size: cover;"></div>
                                 </a>
                             </div>
                             <!-- END PORTFOLIO ITEM -->
                             <!--  PORFOLIO ITEM -->
-                            <div class="porfoliowarp__item" data-groups="[&quot;branding&quot;]">
-                                <a class="porfoliowarp__portolink  glightbox" data-glightbox="type: image" href="./asset/portfolio/6.jpg">
+                            <div class="porfoliowarp__item animate__animated">
+                                <a class="porfoliowarp__portolink  glightbox" data-glightbox="type: image" href="img/stich.gif">
                                     <i class="fa-solid fa-circle-plus"></i>
-                                    <div class="porfoliowarp__content" style="background: url(./asset/portfolio/6.jpg) no-repeat center;  background-position: center;
+                                    <div class="porfoliowarp__content " style="background: url(img/stich.gif) no-repeat center;  background-position: center;
                         background-size: cover;"></div>
                                 </a>
                             </div>
@@ -223,9 +224,9 @@
 </article>
 <aside class="news_links">
 <div class="portfolio-menu">
-<a href="#" data-text="Read More" class="button-hover">Read More</a>
-<a href="#" data-text="Loren Ipsun" class="button-hover">Loren Ipsun</a>
-<a href="#" data-text="Abra Kadabra" class="button-hover">Abra Kadabra</a>
+<a href="#corel" data-text="CorelDRAW" class="button-hover" target="_self">CorelDRAW</a>
+<a href="#photoshop" data-text="Adobe Photoshop" class="button-hover" target="_self">Adobe Photoshop</a>
+<a href="#animate" data-text="Adobe Animate" class="button-hover" target="_self">Adobe Animate</a>
 </div>
 <div class="news">
 	<a href="https://uaforizm.com/" title="Цитата дня" target="_blank" rel="noopener"><img loading="lazy" src="https://uaforizm.com/inf/?color=blue" alt="Цитата дня" width="210px" border="0" /></a>
@@ -236,12 +237,9 @@
 <script async type="text/javascript" src="https://radiopotok.ru/f/script5/fa4f4e65674875a5c0cdaaf7e27bf583.js" charset="UTF-8"></script>
 </div>
 </aside>
-
-
-
 </main>
 <footer>
- <div class="my-flex-box">Спасибо за посищение моей страницы</div>
+ <div class="my-flex-box">Спасибо за посещение моей страницы</div>
 <div class="block3">
 	<div class="copyr">
 		<a href="#">ПОРТФОЛИО</a>
