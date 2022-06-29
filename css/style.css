@@ -1,3 +1,4 @@
+import 'animate.css';
 *{
 	padding: 0px;
 	margin: 0px;
@@ -1149,4 +1150,10 @@ position: relative;
 	color: #deeff5;
 	position:absolute;
 	top: -2.75em;
+}
+.porfoliowarp__item:hover {
+	transform: scale(1.3);
+	transform-origin: center center;
+	z-index:368;
+	opacity:1;
 }
