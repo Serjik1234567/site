@@ -616,8 +616,8 @@ main p {
 main .content {
 	width: calc(100% - 260px);
     margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
 	position:relative;
 	margin-bottom: 30px;
 }
