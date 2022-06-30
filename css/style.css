@@ -161,7 +161,7 @@ nav {
 }	
 .nav {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	background: linear-gradient( to top, rgb(201,201,201) 0%, rgb(255,255,255) 100%);
 	align-items: center;
 	margin:0 auto;
@@ -247,7 +247,7 @@ nav {
   }
 
 }
-.search {
+/*.search {
 	display: flex;	
 }
 .search input{	
@@ -263,7 +263,7 @@ nav {
 	background: #bdbdbd;
 	width: 198px;
 	transition: 2s;
-}
+}*/
 .menu > li > a {
 	display: table-cell;
     vertical-align: middle;
@@ -329,6 +329,7 @@ nav {
 	display: inline-block;
 	text-decoration:none;
 	padding: 7px 14px;
+	margin-top: 10px;
 	background: black;
 	color: white;
 	text-transform: uppercase;
@@ -389,7 +390,8 @@ nav {
 	margin-bottom: 40px;
 	font-size: 26px;
 	font-family: "Myriad Pro";
-	color: #fff;
+	color: rgb(255, 255, 255);
+	font-weight: bold;
 	text-align: center;
 	align-items: center;
 	z-index:-1;
@@ -411,24 +413,6 @@ nav {
 }
 
 /*FOOTER*/
-.menu3, .menu4, .form {
-	margin-top:30px;
-}
-.spis {
-	list-style-type:none;
-	  padding-top:7px;
-  border-top:1px solid #6ed3fb;	
-}
-.spis a {
-	text-decoration: none;
-	font-size: 11px;
-  font-family: "Arial";
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 2.364;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-}
 .zag1, .zag2, .zag3 {
   font-size: 26px;
   font-family: 'Myriad Pro';
@@ -439,101 +423,7 @@ nav {
   padding-bottom:10px;
   border-bottom:1px solid #0f6c91;
 }
-.menu3 {
-	width: 145px;
-	margin-left: 6%;
-}
-.menu4 {
-	width: 400px;
-}
-.form {
-	width: 300px;
-	margin-right: 5%;
-}
-.info {
-	display:flex;
-	padding-top:20px;
-  border-top:1px solid #6ed3fb;
-  background:url(img/map.png) no-repeat top 15px left;
-  flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    align-items: flex-start;	
-}
-.info p {
-	display:inline-block;
-	font-size: 11px;
-  font-family: "Arial";
-  color: rgb(255, 255, 255);
-  line-height: 1.364;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-  margin-left: 215px;
-  margin-bottom: 15px;
-}
-.info a {
-	display: inline-block;
-	font-size: 11px;
-  font-family: "Arial";
-  color: rgb(255, 255, 255);
-  line-height: 1.364;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
-}
-form p {
-	 font-size: 14px;
-  font-family: "Arial";
-  color: rgb(255, 255, 255);
-  line-height: 1.286;
-  text-align: left;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
-  padding-top: 5px;
-}
-form {
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
 
-}
-input {	
-border: none;
-	width:218px;
-	border-radius: 3px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: inset 2.007px 2.229px 5px 0px rgba(178, 179, 184, 0.004);
-margin-bottom: 5px;
-  height: 30px;
-}
-.fo {
-	width: 280px;
-padding-top:12px;
-  border-top:1px solid #6ed3fb;
-}
-textarea {
-		width:218px;
-	border: none;
-border-radius: 3px;
-margin-bottom: 5px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: inset 2.007px 2.229px 5px 0px rgba(178, 179, 184, 0.004);
-}
-button {
-	width:80px;
-	height: 30px;
-  border-radius: 3px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: inset 2.007px 2.229px 5px 0px rgba(178, 179, 184, 0.004);
-  margin-left: 62px;
-  border: none;
-  font-size: 14px;
-  font-family: "Myriad Pro";
-  color: rgb( 7, 132, 182 );
-  line-height: 1.286;
-}
 .block3 {
 	display:flex;
 	width: 100%;
@@ -597,11 +487,12 @@ text-decoration: none;
 }
 h1 {
 	font-size: 30px;
-	font-weight: lighter;
+	font-weight: bold;
 	font-style: italic;
 	padding-top:20px;
 	padding-left:20px;
-	color:#8ad847;
+	color:#040171;
+	text-align: center;
 }
 main {
 	width: 90%;
@@ -673,21 +564,21 @@ padding-left: 20px;
    html{
 	scroll-behavior: smooth;
   }
-  
+  /*KNOPKA VVERH*/
   .akeconsa-udaneles{
 	position: fixed;
-	bottom: 28px;
-	right: 28px;
+	bottom: 15px;
+	right: 10px;
 	z-index: 9;
   }
   .akeconsa-udaneles a {
 	height: 42px;
 	width: 42px;
 	text-align: center;
-	background: #151414 url(../img/111095-glowing-green-neon-icon-business-cursor.png) top -5px left 8px;
+	background: #ffffff98 url(../img/111095-glowing-green-neon-icon-business-cursor.png) top -5px left 8px;
 	background-size:cover;
 	display: block;
-	border-radius: 2px;
+	border-radius: 5px;
   }
   .akeconsa-udaneles a span {
 	color: #f7f0f0;
@@ -708,7 +599,8 @@ display: flex;
 	justify-content: space-evenly;
 		  width:350px;
 	  height:650px;
-	background: green;
+	background: url(../img/email-send.jpg) no-repeat;
+	background-size: cover;
 	background-size: 100%;
 	transition: transform 2s;
 	transform-style: preserve-3d;
@@ -718,7 +610,7 @@ z-index:30
 .text {
 		  width:350px;
 	  height:650px;
-	background: #000 url(img/small_final_colorizebw.jpg) no-repeat top center;
+	background: #000 url(..img/small_final_colorizebw.jpg) no-repeat top center;
 	background-size: 30%;
 	flex-direction: column;
 	transform: rotateY(180deg);
@@ -729,10 +621,15 @@ z-index:30
 .perevorot-block:hover .text{
 	transform: rotateY(360deg );	
 }
+.perevorot p, h3{
+	font-size: 30px;
+	color:rgb(252, 5, 5);
+	font-weight: bold;
+}
 .perevorot, .text {
   position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content:  space-around;
   align-items: center;
   transition: 1s;
 flex-direction: column;
@@ -777,17 +674,20 @@ margin-bottom: 5px;
   box-shadow: inset 2.007px 2.229px 5px 0px rgba(178, 179, 184, 0.004);
 }
 button {
-	width:80px;
+	width:218px;
 	height: 30px;
   border-radius: 3px;
   background-color: rgb(255, 255, 255);
   box-shadow: inset 2.007px 2.229px 5px 0px rgba(178, 179, 184, 0.004);
-  margin-left: 62px;
   border: none;
   font-size: 14px;
   font-family: "Myriad Pro";
   color: rgb( 7, 132, 182 );
   line-height: 1.286;
+  cursor: pointer;
+}
+iframe{
+	margin: 10px auto;
 }
 /*SSILKI V ABOUTUS*/
 .linki {
@@ -922,7 +822,7 @@ button {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px;
+    margin-left: -40px;
 }
 .container{
     width: 100%;
@@ -1110,7 +1010,6 @@ button {
 }
 [class*="button-"] {
 position: relative;
-    display: inline-block;
     overflow: hidden;
     float: left;
     height: 55px;
